@@ -1,6 +1,3 @@
-import { combineReducers } from 'redux';
-
-
 import { useReducer } from "react";
 import {
   UPDATE_PRODUCTS,
@@ -14,9 +11,17 @@ import {
   TOGGLE_CART
 } from "./actions";
 
+const initialState = {
+  products: [],
+  cart: [],
+  cartOpen: false,
+  categories: [],
+  currentCategory: '',
+};
 
 
-export const reducer = (state, action) => {
+
+export const reducer = (state=initialState, action) => {
   switch (action.type) {
     case UPDATE_PRODUCTS:
       return {
@@ -90,10 +95,4 @@ export const reducer = (state, action) => {
   }
 };
 
-export function useProductReducer(initialState) {
-  return useReducer(reducer, initialState)
-}
-
-const reduxrootReducer = combineReducers({});
-
-export  default reduxrootReducer; 
+export default reducer;
