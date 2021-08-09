@@ -5,11 +5,8 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 import { Provider } from "react-redux";
-import { createStore } from 'redux';
-import reducer from './utils/reducers';
-import { composeWithDevTools } from 'redux-devtools-extension';
 
-const store = createStore(reducer, composeWithDevTools());
+import store from "./utils/store";
 
 
 ReactDOM.render(

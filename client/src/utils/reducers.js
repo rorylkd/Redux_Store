@@ -11,6 +11,8 @@ import {
   TOGGLE_CART
 } from "./actions";
 
+// Added initialstate object (same as in globalstate.js) that we pass to our reducer
+
 const initialState = {
   products: [],
   cart: [],
