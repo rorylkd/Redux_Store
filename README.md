@@ -14,4 +14,4 @@ Screenshot #1:
 
 ## Link
 
-Link to deployed application: 
+Link to deployed application: https://powerful-falls-83057.herokuapp.com/
